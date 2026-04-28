@@ -80,8 +80,8 @@ nav a:hover {
 }
 
 .section-1 img {
-    width: 100%;
-    max-width: 860px;
+    width: 50%;
+    max-width: 430px;
     height: 50px;
     object-fit: cover;
     border-radius: 16px;
@@ -124,7 +124,7 @@ nav a:hover {
 }
 
 .card img {
-    width: 100%;
+    width: 50%;
     height: 50px;
     object-fit: cover;
     border-radius: 10px;
@@ -186,7 +186,7 @@ nav a:hover {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
