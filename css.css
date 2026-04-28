@@ -1,211 +1,104 @@
-/* ================= HERO ================= */
-
-.section-1 {
-    padding: 60px 20px;
-    text-align: center;
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #121212;
+    color: white;
 }
 
-.section-1 h1 {
-    font-size: 2.5rem;
-    margin-bottom: 12px;
-}
-
-.section-1 p {
-    color: var(--Text-Abu);
-    font-size: 1rem;
-    margin-bottom: 25px;
-}
-
-.section-1 img {
-    width: 75%;
-    max-width: 260px;
-    border-radius: 20px;
-    display: block;
+.container {
+    width: 90%;
+    max-width: 1200px;
     margin: auto;
 }
 
-/* ================= PRODUK ================= */
-
-.produk-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 22px;
-    padding: 35px 5%;
-}
-
-.card {
-    background: var(--Gelap-2);
-    border-radius: 18px;
-    padding: 16px;
-    text-align: center;
-    transition: 0.3s;
-    border: 1px solid #1d1d1d;
-}
-
-.card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 8px 20px rgba(0, 26, 255, 0.15);
-}
-
-.card img {
-    width: 100%;
-    height: 170px;
-    object-fit: cover;
-    border-radius: 14px;
-    margin-bottom: 14px;
-    display: block;
-}
-
-.card h3 {
-    font-size: 1rem;
-    margin: 10px 0 6px;
-}
-
-.card .harga {
-    font-size: 1rem;
-    font-weight: bold;
-    color: var(--Utama);
-    margin-bottom: 5px;
-}
-
-.card .harga-coret {
-    font-size: 0.8rem;
-    color: var(--Text-Abu);
-    text-decoration: line-through;
-}
-
-.card .kategori,
-.card .badge {
-    font-size: 0.75rem;
-    color: var(--Text-Abu);
-    margin-bottom: 8px;
-}
-
-.btn-buy {
-    width: 100%;
-    padding: 11px;
-    border-radius: 10px;
-    border: none;
-    background: var(--Utama);
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: 0.3s;
-}
-
-.btn-buy:hover {
-    opacity: 0.85;
-}
-
-/* ================= MOBILE ================= */
-
-@media (max-width: 480px) {
-
-    .produk-container {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 14px;
-    }
-
-    .card {
-        padding: 12px;
-    }
-
-    .card img {
-        height: 120px;
-    }
-
-    .section-1 h1 {
-        font-size: 1.7rem;
-    }
-
-    .section-1 img {
-        max-width: 180px;
-    }
-}
-/* ===== PERAPIHAN FINAL ===== */
-
-body {
-    line-height: 1.6;
-}
-
-/* Navbar */
 header {
-    padding: 18px 6%;
+    background: #001aff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
 }
 
 nav {
-    display: flex;
-    gap: 18px;
+    margin-top: 10px;
 }
 
-/* Hero */
-.section-1 {
-    padding-top: 70px;
-    padding-bottom: 50px;
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
 }
 
-.section-1 h1 {
-    font-size: 2.3rem;
+.hero {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h2 {
+    font-size: 32px;
     margin-bottom: 10px;
 }
 
-.section-1 p {
-    max-width: 600px;
-    margin: auto;
-    margin-bottom: 25px;
+.hero p {
+    color: #b0b0b0;
 }
 
-/* Produk */
-.produk-container {
-    align-items: stretch;
+.produk {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    padding: 30px 0;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 370px;
+    background: #1e1e1e;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
-    height: 160px;
-    object-fit: cover;
+    height: 180px;
+    object-fit: contain;
+    border-radius: 10px;
+    background: white;
 }
 
 .card h3 {
-    min-height: 45px;
+    margin: 15px 0 10px;
+    font-size: 18px;
 }
 
-/* Tombol */
-.btn-buy {
-    margin-top: auto;
-    font-size: 0.8rem;
-    padding: 11px;
+.card p {
+    color: #b0b0b0;
+    font-size: 14px;
 }
 
-/* Footer */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 18px;
+    background: #001aff;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
 footer {
-    margin-top: 70px;
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-
-    .produk-container {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        min-height: 320px;
-    }
-
-    .card img {
-        height: 120px;
-    }
-
-    .section-1 h1 {
-        font-size: 1.7rem;
-    }
+    text-align: center;
+    padding: 15px;
+    background: #050505;
+    margin-top: 30px;
+    font-size: 14px;
 }
