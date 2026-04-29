@@ -25,7 +25,7 @@ header {
     border-bottom: 1px solid #fceb04;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 100;
     backdrop-filter: blur(10px);
 }
 
@@ -51,7 +51,7 @@ nav a:hover {
 }
 
 .section-1 {
-    padding: 80px 20px;
+    padding: 50px 20px;
     text-align: center;
     background: radial-gradient(circle at center, #fceb04;
 }
@@ -70,9 +70,9 @@ nav a:hover {
 
 /* ✅ FIX: Banner diberi ukuran agar tidak meluber */
 .section-1 img {
-    width: 100%;
-    max-width: 860px;
-    height: 340px;
+    width: 50%;
+    max-width: 100px;
+    height: 50px;
     object-fit: cover;
     border-radius: 16px;
     display: block;
@@ -88,7 +88,7 @@ nav a:hover {
 
 .produk-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     gap: 25px;
     padding: 40px 5%;
 }
@@ -112,8 +112,8 @@ nav a:hover {
 
 /* ✅ FIX: Gambar produk seragam ukurannya */
 .card img {
-    width: 100%;
-    height: 200px;
+    width: 50%;
+    height: 50px;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -168,7 +168,7 @@ nav a:hover {
     padding: 10px 20px;
     cursor: pointer;
     border-radius: 5px;
-    width: 100%;
+    width: 50%;
     font-weight: bold;
     text-transform: uppercase;
     transition: 0.3s;
@@ -193,7 +193,7 @@ footer p {
     margin: 5px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 100px) {
     header {
         flex-direction: column;
         padding: 15px 5%;
@@ -226,7 +226,7 @@ footer p {
     }
 
     .section-1 img {
-        height: 220px;
+        height: 50px;
     }
 
     .p-rekomendasi {
@@ -235,7 +235,7 @@ footer p {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 100px) {
     .produk-container {
         grid-template-columns: repeat(2, 1fr);
         gap: 12px;
@@ -247,7 +247,7 @@ footer p {
     }
 
     .card img {
-        height: 120px;
+        height: 50px;
     }
 
     .card h3 {
