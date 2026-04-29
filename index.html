@@ -2,14 +2,56 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nailongholic.id</title>
+    <title>nailongholic.id</title>
 
-    <link rel="stylesheet" href="Nailongholic.id.css">
+    <style>
+        body {
+            font-family: Arial;
+            background-color: #fceb04;
+        }
+        header {
+            background-color: #fceb04;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+        nav a {
+            margin: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        #hero {
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            width: 200px;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+        button {
+            background-color: #fceb04;
+            color: white;
+            border: none;
+            padding: 8px;
+            cursor: pointer;
+        }
+    </style>
 </head>
+
 <body>
+
 <header>
-    <h1 class="e-nama">Nailongholic.id</h1>
+    <h1>nailongholic.id</h1>
     <nav>
         <a href="#">Home</a>
         <a href="#">Produk</a>
@@ -17,58 +59,61 @@
         <a href="#">Keranjang</a>
     </nav>
 </header>
+
 <main>
 
-    <section class="section-1">
-        <h1>Explore Your needed</h1>
-        <p>Semua perlengkapan nailong Ada Disini!</p>
-        <img src="banner nailong.jpg" alt="nailong Banner">
-        <button class="btn-sec-1">Belanja Sekarang</button>
-    </section>
+<section id="hero">
+    <h2>Semua jenis nailong Ada Disini!</h2>
+    <img src="banner nailong.jpg" alt="nailong Banner">
+    <br><br>
+    <button>Belanja Sekarang</button>
+</section>
 
-    <h2 class="p-rekomendasi">Produk Favorit</h2>
+<section>
+    <h2> Produk Favorit</h2>
 
-    <div class="produk-container">
+    <div class="container">
 
         <div class="card">
-            <img src="boneka nailong.jpg" alt="boneka">
-            <h3>boneka nailong premium</h3>
-            <p class="harga">Rp 300.000</p>
-            <p class="kategori">Kategori: medium </p>
-            <button class="btn-buy">Tambah</button>
+            <img src="ganci nailong.jpeg" alt="gantungan kunci">
+            <h3>ganci nailong </h3>
+            <p>Rp 39.000</p>
+            <p> Kategori: premium</p>
+            <button>Tambah</button>
         </div>
 
         <div class="card">
             <img src="mug nailong.jpg" alt="tempat minum">
             <h3>mug nailong</h3>
-            <p class="harga">Rp 55.000</p>
-            <p class="kategori">Kategori: small size</p>
-            <button class="btn-buy">Tambah</button>
+            <p>Rp 59.000</p>
+            <p>Kategori: small size</p>
+            <button>Tambah</button>
         </div>
 
         <div class="card">
             <img src="kipas angin nailong.jpg" alt="gojodogXnailong">
-            <h3>kipas angin portable nailong</h3>
-            <p class="harga"><span class="harga-coret">Rp 300.000</span> Rp 199.900</p>
-            <p class="badge">🔥 Diskon</p>
-            <button class="btn-buy">Tambah</button>
+            <h3>kipas angin nailong</h3>
+            <p><del>Rp 300.000</del> Rp 199.900</p>
+            <p>🔥 Diskon</p>
+            <button>Tambah</button>
         </div>
 
         <div class="card">
-            <img src="ganci nailong.jpg" alt="gantungan kunci">
-            <h3>ganci nailong premium</h3>
-            <p class="harga">Rp 39.000</p>
-            <p class="badge">⭐ Favorit</p>
-            <button class="btn-buy">Tambah</button>
+            <img src="boneka nailong.jpg" alt="boneka ">
+            <h3>boneka nailong </h3>
+            <p>Rp 150.000</p>
+            <p>⭐ Favorit</p>
+            <button>Tambah</button>
         </div>
 
     </div>
+</section>
 
 </main>
 
 <footer>
-    <p>Kontak: Nailongholic.id@email.com</p>
-    <p>&copy; 2026 Nailongholic.id</p>
+    <p>Kontak: nailongholic.id@email.com</p>
+    <p>&copy; 2026 nailongholic.id</p>
 </footer>
 
 </body>
