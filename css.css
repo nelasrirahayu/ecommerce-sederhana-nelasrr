@@ -1,8 +1,8 @@
 * { box-sizing: border-box;}
 :root {
-    --Utama: #001aff;
-    --Gelap: #050505;
-    --Gelap-2: #121212;
+    --Utama: #fceb04;
+    --Gelap: #111111;
+    --Gelap-2: #111111;
     --Text-Terang: #ffffff;
     --Text-Abu: #b0b0b0;
 }
@@ -22,7 +22,7 @@ header {
     align-items: center;
     padding: 20px 5%;
     background: rgba(0, 0, 0, 0.9);
-    border-bottom: 1px solid rgba(0, 161, 255, 0.2);
+    border-bottom: 1px solid #fceb04;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -33,7 +33,7 @@ header {
     font-size: 1.5rem;
     color: var(--Utama);
     margin: 0;
-    text-shadow: 0 0 10px rgba(0, 161, 255, 0.3);
+    text-shadow: 0 0 10px #fceb04
 }
 
 nav a {
@@ -53,7 +53,7 @@ nav a:hover {
 .section-1 {
     padding: 80px 20px;
     text-align: center;
-    background: radial-gradient(circle at center, rgba(0, 26, 225, 0.4) 0%, rgba(0, 5, 5, 0) 70%);
+    background: radial-gradient(circle at center, #fceb04;
 }
 
 .section-1 h1 {
@@ -107,7 +107,7 @@ nav a:hover {
 .card:hover {
     transform: translateY(-10px);
     border-color: var(--Utama);
-    box-shadow: 0 10px 30px rgba(0, 161, 255, 0.15);
+    box-shadow: 0 10px 30px #fceb04;
 }
 
 /* ✅ FIX: Gambar produk seragam ukurannya */
@@ -117,7 +117,7 @@ nav a:hover {
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
-    background: #222;
+    background: #fcfafa;
 }
 
 .card h3 {
