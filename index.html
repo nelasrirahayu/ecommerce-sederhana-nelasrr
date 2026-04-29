@@ -6,345 +6,170 @@
   <title>nailongholic.id</title>
 
   <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      scroll-behavior:smooth;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
-    :root{
-      --primary:#f3f3ea;
-      --dark:#eeeb2d;
-      --dark2:#eeeb2d;
-      --white:#ffffff;
-      --gray:#b5b5b5;
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffd93d;
+      color: #333;
     }
 
-    body{
-      font-family:'Segoe UI',sans-serif;
-      background:var(--white);
-      color:var(--dark);
+    header {
+      background: #ffcc00;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     }
 
-    /* NAVBAR */
-    header{
-      background: #000;eeeb2d;
-      backdrop-filter:blur(10px);
-      position:sticky;
-      top:0;
-      z-index:1000;
-      padding:15px 8%;
-      display:flex;
-      justify-content:space-between;
-      align-items:center;
-      border-bottom:1px solid rgb(242, 243, 241);
+    header h1 {
+      font-size: 40px;
+      color: white;
+      text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
     }
 
-    .logo{
-      font-size:28px;
-      font-weight:bold;
-      color:var(--primary);
+    header p {
+      color: white;
+      margin-top: 8px;
+      font-size: 16px;
     }
 
-    nav a{
-      color:var(--white);
-      text-decoration:none;
-      margin-left:20px;
-      transition:0.3s;
-      font-size:15px;
+    .container {
+      width: 90%;
+      margin: 30px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
     }
 
-    nav a:hover{
-      color:var(--primary);
+    .card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+      transition: 0.3s;
     }
 
-    /* HERO */
-    .hero{
-      min-height:90vh;
-      display:flex;
-      align-items:center;
-      justify-content:center;
-      text-align:center;
-      padding:40px 8%;
-      background:
-      linear-gradient(rgba(0,0,0,0.7),
-      rgba(0,0,0,0.7)),
-      url('banner nailong.jpg');
-      background-size:cover;
-      background-position:center;
+    .card:hover {
+      transform: translateY(-8px);
     }
 
-    .hero-content h1{
-      font-size:55px;
-      margin-bottom:15px;
+    .card img {
+      width: 100%;
+      height: 280px;
+      object-fit: cover;
     }
 
-    .hero-content span{
-      color:var(--primary);
+    .card-content {
+      padding: 18px;
+      text-align: center;
     }
 
-    .hero-content p{
-      color:var(--gray);
-      max-width:600px;
-      margin:auto;
-      line-height:1.7;
+    .card h2 {
+      font-size: 22px;
+      margin-bottom: 10px;
+      color: #ff9900;
     }
 
-    .hero-btn{
-      display:inline-block;
-      margin-top:25px;
-      padding:14px 30px;
-      background:var(--primary);
-      color:white;
-      text-decoration:none;
-      border-radius:12px;
-      transition:0.3s;
-      font-weight:bold;
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #333;
     }
 
-    .hero-btn:hover{
-      transform:translateY(-5px);
-      background:#fffb00;
+    .discount {
+      text-decoration: line-through;
+      color: red;
+      font-size: 16px;
+      margin-right: 8px;
     }
 
-    /* TITLE */
-    .title{
-      text-align:center;
-      font-size:35px;
-      margin:70px 0 40px;
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      border: none;
+      background: #ffcc00;
+      color: white;
+      border-radius: 30px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
     }
 
-    .title span{
-      color:var(--primary);
+    button:hover {
+      background: #ffaa00;
     }
 
-    /* PRODUCTS */
-    .products{
-      padding:0 8% 80px;
-      display:grid;
-      grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
-      gap:25px;
-    }
-
-    .card{
-      background:var(--dark2);
-      border-radius:20px;
-      overflow:hidden;
-      transition:0.4s;
-      box-shadow:0 5px 15p #fffb00;
-    }
-
-    .card:hover{
-      transform:translateY(-10px);
-    }
-
-    .card img{
-      width:100%;
-      height:260px;
-      object-fit:cover;
-    }
-
-    .card-body{
-      padding:20px;
-    }
-
-    .card-body h3{
-      margin-bottom:10px;
-      font-size:20px;
-    }
-
-    .price{
-      color:var(--primary);
-      font-size:22px;
-      font-weight:bold;
-      margin-bottom:15px;
-    }
-
-    .card-body p{
-      color:var(--gray);
-      font-size:14px;
-      line-height:1.6;
-    }
-
-    .btn{
-      display:inline-block;
-      margin-top:18px;
-      padding:10px 18px;
-      background:var(--primary);
-      color:white;
-      border-radius:10px;
-      text-decoration:none;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      background:#fffb00;
-    }
-
-    /* ABOUT */
-    .about{
-      padding:80px 8%;
-      text-align:center;
-      background:#fdfcfc;
-    }
-
-    .about p{
-      color:var(--gray);
-      max-width:700px;
-      margin:auto;
-      line-height:1.8;
-    }
-
-    /* FOOTER */
-    footer{
-      background:#080808;
-      text-align:center;
-      padding:25px;
-      color:var(--gray);
-      border-top:1px solid rgba(255,255,255,0.1);
-    }
-
-    /* RESPONSIVE */
-    @media(max-width:768px){
-
-      header{
-        flex-direction:column;
-        gap:15px;
-      }
-
-      nav{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-      }
-
-      .hero-content h1{
-        font-size:38px;
-      }
-
-      .title{
-        font-size:28px;
-      }
-
-      .card img{
-        height:220px;
-      }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffcc00;
+      color: white;
+      margin-top: 30px;
+      font-size: 14px;
     }
   </style>
 </head>
 
 <body>
 
-  <!-- NAVBAR -->
   <header>
-    <div class="logo">nailongholic.id</div>
-
-    <nav>
-      <a href="#">Home</a>
-      <a href="#produk">Produk</a>
-      <a href="#about">About</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>nailongholic.id</h1>
+    <p>Koleksi lucu dan gemoy Nailong 💛</p>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero-content">
-      <h1>nailongholic.id <span>Untuk Semua</span></h1>
+  <div class="container">
 
-      <p>
-        Temukan barang favoritmu dengan kualitas premium dan desain modern
-        yang cocok untuk kebutuhan sehari-hari kamu.
-      </p>
-
-      <a href="#produk" class="hero-btn">Belanja Sekarang</a>
-    </div>
-  </section>
-
-  <!-- PRODUK -->
-  <h2 class="title" id="produk">Produk <span>Terbaru</span></h2>
-
-  <section class="products">
-
+    <!-- Produk 1 -->
     <div class="card">
-      <img src="boneka nailong.jpg" alt="">
-
-      <div class="card-body">
-        <h3>boneka nailong bassic</h3>
-        <div class="price">Rp150.000</div>
-
-        <p>
-          boneka dengan ukuran medium berbahan lembut.
-        </p>
-
-        <a href="#" class="btn">Beli Sekarang</a>
+      <img src="ganci.jpg" alt="Ganci Nailong">
+      <div class="card-content">
+        <h2>Ganci Nailong</h2>
+        <p class="price">Rp.49.000</p>
+        <button>Beli Sekarang</button>
       </div>
     </div>
 
+    <!-- Produk 2 -->
     <div class="card">
-      <img src="ganci nailong.jpeg" alt="">
-
-      <div class="card-body">
-        <h3>gantungan kunci nailong</h3>
-        <div class="price">Rp49.000</div>
-
-        <p>
-          gantungan nailong bahan premium.
-        </p>
-
-        <a href="#" class="btn">Beli Sekarang</a>
+      <img src="mug.jpg" alt="Mug Nailong">
+      <div class="card-content">
+        <h2>Mug Nailong</h2>
+        <p class="price">Rp.55.000</p>
+        <button>Beli Sekarang</button>
       </div>
     </div>
 
+    <!-- Produk 3 -->
     <div class="card">
-      <img src="kipas angn nailong.jpg" alt="">
-
-      <div class="card-body">
-        <h3>kipas angin portable</h3>
-        <div class="price">Rp199.900</div>
-
+      <img src="kipas.jpg" alt="Kipas Angin Nailong">
+      <div class="card-content">
+        <h2>Kipas Angin Nailong</h2>
         <p>
-          kipas angin portable cocok saat cuaca panas.
+          <span class="discount">Rp.300.000</span>
+          <span class="price">Rp.199.900</span>
         </p>
-
-        <a href="#" class="btn">Beli Sekarang</a>
+        <button>Beli Sekarang</button>
       </div>
     </div>
 
+    <!-- Produk 4 -->
     <div class="card">
-      <img src="mug nailong.jpg" alt="">
-
-      <div class="card-body">
-        <h3>mug nailong (small size)</h3>
-        <div class="price">Rp50.000</div>
-
-        <p>
-          gelas modern dengan desain simple dan lucu.
-        </p>
-
-        <a href="#" class="btn">Beli Sekarang</a>
+      <img src="boneka.jpg" alt="Boneka Nailong">
+      <div class="card-content">
+        <h2>Boneka Nailong</h2>
+        <p class="price">Rp.150.000</p>
+        <button>Beli Sekarang</button>
       </div>
     </div>
 
-  </section>
+  </div>
 
-  <!-- ABOUT -->
-  <section class="about" id="about">
-
-    <h2 class="title">Tentang <span>Kami</span></h2>
-
-    <p>
-      nailongholic.id adalah toko aksesoris online yang menyediakan berbagai
-      produk modern dengan kualitas terbaik dan harga terjangkau.
-      nailong hadir membawa kesan playful,imut,dan menyenangkan yang membantu hari jadi lebih ceria!.
-    </p>
-
-  </section>
-
-  <!-- FOOTER -->
   <footer>
-    <p>© 2026 nailongholic.id. All Rights Reserved.</p>
+    © 2026 nailongholic.id | Semua Hak Dilindungi 💛
   </footer>
 
 </body>
